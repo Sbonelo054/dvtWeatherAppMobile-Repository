@@ -6,4 +6,10 @@
         android:orderInCategory="100"
         android:title="Add to favourites"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_add_city"
+        android:orderInCategory="100"
+        android:title="Add City"
+        app:showAsAction="never" />
 </menu>

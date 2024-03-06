@@ -1,4 +1,6 @@
 package com.example.dvtweatherapp.model
 
-data class Wind(var speed: Double?,
-                var deg: Int?)
+data class Wind(
+    var speed: Double?,
+    var deg: Int?
+)

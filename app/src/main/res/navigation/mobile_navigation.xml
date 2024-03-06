@@ -7,25 +7,26 @@
 
     <fragment
         android:id="@+id/nav_current_weather"
-        android:name="com.example.dvtweatherapp.ui.home.HomeFragment"
-        android:label="Current Weather"
+        android:name="com.example.dvtweatherapp.ui.HomeFragment"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_favourites"
-        android:name="com.example.dvtweatherapp.ui.gallery.FavouritesFragment"
-        android:label="Favourites"
-        tools:layout="@layout/fragment_favourites" />
-
-    <fragment
-        android:id="@+id/nav_offline_mode"
-        android:name="com.example.dvtweatherapp.ui.slideshow.SlideshowFragment"
-        android:label="Offline Mode"
-        tools:layout="@layout/fragment_slideshow" />
+        android:name="com.example.dvtweatherapp.ui.FavouritesFragment"
+        tools:layout="@layout/fragment_favourites" >
+        <action
+            android:id="@+id/action_favourites_to_favourite_details"
+            app:destination="@id/nav_favourite_details" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_maps"
         android:name="com.example.dvtweatherapp.ui.MapsFragment"
-        android:label="View Maps"
         tools:layout="@layout/fragment_maps" />
+
+    <fragment
+        android:id="@+id/nav_favourite_details"
+        android:name="com.example.dvtweatherapp.ui.FavouriteDetailsFragment"
+        tools:layout="@layout/fragment_favourite_details"
+/>
 </navigation>

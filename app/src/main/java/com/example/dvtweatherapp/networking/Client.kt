@@ -10,5 +10,5 @@ object Client {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    var instance : Retrofit = backingInstance
+    var instance: Retrofit = backingInstance
 }
